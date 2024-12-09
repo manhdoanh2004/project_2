@@ -1,0 +1,124 @@
+extends ../layout/default.pug
+include ../mixins/section-2.pug
+include ../mixins/breadcrumb.pug
+block title
+    title Chi tiết sản phẩm
+
+block main
+    
+    //-Product infor//
+    section.product-infor
+        .container 
+            .product-infor__wrap 
+                .product-infor__left
+                    .product-infor__image-main
+                        img(src="assets/Img/product_pet-1.JPG", alt="")
+                    
+                    .product-infor__image-thumb
+                        img(src="assets/Img/product_pet-6.JPG", alt="")
+                        img(src="assets/Img/product_pet-2.JPG", alt="")
+                        img(src="assets/Img/product_pet-3.JPG", alt="")
+                        img(src="assets/Img/product_pet-4.JPG", alt="")
+                        img(src="assets/Img/product_pet-5.JPG", alt="")
+                        
+                       
+
+
+                .product-infor__right 
+                
+                    - 
+                        var breadcrumb=[
+                            {
+                                link:"#",
+                                title:"Trang chủ"
+                            },
+                            {
+                                link :"#",
+                                title:"Chó"
+                            },
+                            {
+                                link :"#",
+                                title:"Chó nhỏ" 
+                            },
+                            {
+                                link :"#",
+                                title:"Shiba Inu Màu Nâu Đỏ" 
+                            }
+                        ];
+
+                    +breadcrumb(breadcrumb,"")
+                    
+
+                        //-End breadcrumb 
+
+                    h1.product-infor__title Shiba Inu Màu Nâu Đỏ
+                    .product-infor__price 12.000.000 VND
+
+                    .product-infor__buttons 
+                        .button Liên hệ
+                        div(class="button button--outline") 
+                            <i class="fa-regular fa-comment-dots"></i> Chat với Monito
+                    .product-infor__tables 
+                        table 
+                            tbody
+                                tr
+                                    td SKU
+                                    td #1000078
+                                tr
+                                        td Giống
+                                        td Cái
+                                tr
+                                        td Tuổi
+                                        td 2 tháng    
+                                tr
+                                        td Kích thước
+                                        td Nhỏ
+                                tr
+                                        td Màu sắc
+                                        td Nâu đỏ
+                                tr
+                                        td Mô tả ngắn
+                                        td Giống thuần chủng Shih Tzu. Cấu trúc cơ thể 
+                                         |  tốt. Với chứng chỉ MKA và Microchip. Cha từ 
+                                         |  dòng dõi vô địch.
+                    
+                    nav.box-share
+                        .box-share__label 
+                            <i class="fa-solid fa-share-nodes"></i>Chia sẻ
+                        ul.box-share__list
+                            li 
+                                a(href="#" class="box-share__link") <i class="fa-brands fa-facebook"></i>
+                            li 
+                                a(href="#" class="box-share__link") <i class="fa-brands fa-twitter"></i>
+                            li 
+                                a(href="#" class="box-share__link") <i class="fa-brands fa-instagram"></i>
+                            li 
+                                a(href="#" class="box-share__link") <i class="fa-brands fa-youtube"></i>
+
+            .product-infor__customer
+                h2.product-infor__customer-title Khách hàng của chúng tôi
+                .product-infor__customer-image
+                    img(src="assets/Img/product_customer-1.JPG", alt="")
+                    img(src="assets/Img/product_customer-2.JPG", alt="")
+                    img(src="assets/Img/product_customer-3.JPG", alt="")
+                    img(src="assets/Img/product_customer-4.JPG", alt="")
+                
+                .product-infor__customer-dos
+                    .product-infor__customer-dos-item 
+                    .product-infor__customer-dos-item
+                    .product-infor__customer-dos-item
+                    .product-infor__customer-dos-item
+
+
+
+
+                    
+
+            
+
+            
+
+    
+
+
+    +section-2("Có gì mới","Xem thêm chó con","")

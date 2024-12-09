@@ -1,0 +1,55 @@
+mixin section-2(title ,subtitle,link)
+        section.section-2
+            .container
+                .box-head
+                    .section-2__iteamleft
+                        .section-2__title #{title}
+                        
+                        h2.section-2__subtitle  #{subtitle}
+                        
+                    if(link)
+                      .section-2__itemright
+                        a(href=link class="button button--outline") 
+                           | Xem thêm  <i class="fa-solid fa-angle-right"></i>
+                      
+                  
+               
+                .section-2__wrap
+                    .product-item
+                        .section-2__image
+                            a(href="#") 
+                                img(src="/project_2/assets/Img/section-2_product1.jpg" alt="")
+                                  
+                    
+                        .section-2__content
+                            h3.section-2__ptitl
+                                |MO231 - Pomeranian Trắng
+                            
+                            .section-2__desc
+                                .section-2__descleft
+                                    .section-2__gender
+                                        |Giống:
+                                    
+                                    .section-2__namegender
+                                        |Đực
+                                   
+                                
+                                .section-2__dos
+
+                                .section-2__desc-right
+                                    .section-2__age
+                                        |Tuổi
+                                   
+                                    .section-2__nage 02 tháng
+                                
+                           
+                            .section-2__price 6.900.000 VND
+                   
+                
+                
+                
+                
+                
+                if(link)
+                    .section-2__button-bottom
+                        a(href="#" class="button button-outline") Xem thêm <i class="fa-solid fa-angle-right"></i>

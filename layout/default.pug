@@ -1,0 +1,120 @@
+doctype html
+html
+    head
+        block title
+        meta(charset="UTF-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        link( rel="stylesheet" href="assets/CSS/style.css")
+        link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css")
+        link(rel="icon" href="/project_2/assets/Img/Frame.svg")
+
+    body
+        //header
+        header.header
+            .container
+                .header__wrap
+                    .header__button-menu
+                        i.fa-solid.fa-bars
+                    .header__logo
+                        a(href="index.html")
+                            img(
+                                alt="Monito" 
+                                src="assets/Img/Frame.svg"
+                                )
+                    nav.header__menu
+                        ul
+                            li
+                                a(href="index.html") trang chủ
+                            li
+                                a(href="danhsachsanpham.html") Danh mục
+                            li
+                                a(href="#") Giới thiệu
+                            li
+                                a(href="#") Liên hệ
+                    form.header__search(action="")
+                        i.fa-solid.fa-magnifying-glass
+                        input(
+                            placeholder="Nhập từ khóa...." 
+                            type="text"
+                            )
+                    a.button(href="#") tham gia cộng đồng
+                    .header__button-search
+                        i.fa-solid.fa-magnifying-glass
+            //End header
+
+        block main
+
+
+        //Footer
+        footer.footer
+                    .container
+                        .footer__top
+                            h2.footer__content Đăng ký ngay để không bỏ lỡ các chương trình của chúng tôi
+                            form.footer__form(action="")
+                                input(
+                                    placeholder="Nhập email của bạn..." 
+                                    type="text"
+                                    )
+                                button.button Đăng Ký Ngay
+                        .footer__mider
+                            nav.footer__menu
+                                ul
+                                    li
+                                        a(href="#") trang chủ
+                                    li
+                                        a(href="#") danh mục
+                                    li
+                                        a(href="#") giới thiệu
+                                    li
+                                        a(href="#") liên hệ
+                            nav.footer__icon
+                                ul
+                                    li
+                                        a(
+                                            target="_blank" 
+                                            href="#"
+                                            )
+                                            i.fa-brands.fa-facebook
+                                    li
+                                        a(
+                                            target="_blank" 
+                                            href="#"
+                                            )
+                                            i.fa-brands.fa-twitter
+                                    li
+                                        a(
+                                            target="_blank" 
+                                            href="#"
+                                            )
+                                            i.fa-brands.fa-youtube
+                                    li
+                                        a(
+                                            target="_blank" 
+                                            href="#"
+                                            )
+                                            i.fa-brands.fa-youtube
+                        .footer__bottom
+                            .footer__copyright © 2023 28Tech. All rights reserved.
+                            .footer__logo
+                                a(href="#")
+                                    img(
+                                        alt="" 
+                                        src="/project_2/assets/Img/Frame.svg"
+                                        )
+                            .footer__link
+                                ul
+                                    li
+                                        a(
+                                            target="_blank" 
+                                            href="#"
+                                            ) Điều khoản dịch vụ
+                                    li
+                                        a(
+                                            target="_blank" 
+                                            href="#"
+                                            ) Chính sách bảo mật
+        //End Footer
+
+            
+
+
